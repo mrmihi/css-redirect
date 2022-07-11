@@ -1,0 +1,49 @@
+:root {
+    box-sizing: border-box;
+    --main-color  : conic-gradient(from -.5turn at bottom right, deeppink, cyan, rebeccapurple);
+    --text-color  : hsl(0, 0%, 100%);
+    --text-color2 : hsl(78, 100%, 59%);
+    --shadow-color: hsl(7, 15%, 12%);
+}
+body {
+
+}
+/* First section */
+.landing {
+    background: var(--main-color);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: clamp(1.5rem, 15vw , 15rem);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@keyframes gradient {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+/* Div containing the site title */
+.css {
+    text-align: center;
+    width: 80%;
+    font-weight: 100;
+    color: var(--text-color);
+    margin: 0 auto;
+    transform: rotate(-10deg);
+    text-shadow: 5px 5px 1px var(--shadow-color);
+    
+}
+
+/* Styling the first word of the site title */
+.css::first-line {
+    color: var(--text-color2);
+}
