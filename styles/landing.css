@@ -2,8 +2,8 @@
     box-sizing: border-box;
     --main-color  : conic-gradient(from -.5turn at bottom right, deeppink, cyan, rebeccapurple);
     --text-color  : hsl(0, 0%, 100%);
-    --text-color2 : hsl(78, 100%, 59%);
-    --shadow-color: hsl(7, 15%, 12%);
+    --text-color2 : hsl(63, 100%, 59%);
+    --shadow-color: hsla(12, 11%, 9%, 0.443);
 }
 body {
 
@@ -35,6 +35,7 @@ body {
 .css {
     text-align: center;
     width: 80%;
+    min-height: 100%;
     font-weight: 100;
     color: var(--text-color);
     margin: 0 auto;
