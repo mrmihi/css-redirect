@@ -1,25 +1,41 @@
 :root {
     box-sizing: border-box;
-    --main-color  : conic-gradient(from -.5turn at bottom right, deeppink, cyan, rebeccapurple);
+    --main-color  : conic-gradient(from -90deg at 25% 115%, #ff0000, #ff0066, #ff00cc, #cc00ff, #6600ff, #0000ff, #0000ff, #0000ff, #0000ff);
     --text-color  : hsl(0, 0%, 100%);
     --text-color2 : hsl(63, 100%, 59%);
     --shadow-color: hsla(12, 11%, 9%, 0.443);
 }
-body {
-
+html, body {
+    height: 100%;
 }
+/* media query for small screens */
+
 /* First section */
 .landing {
     background: var(--main-color);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     width: 100%;
+    height: 120%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: clamp(1.5rem, 15vw , 15rem);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    font-size: 15vw;
+}
+@media screen and (max-width: 1300px) {
+    .landing {
+        /* padding-top: 3%; */
+    }
 }
 
+@media screen and (max-width: 700px) {
+    .landing {
+        /* padding-top: 10%; */
+        height: 70%;
+    }
+    .divider{
+        display: none;
+    }
+}
+/* Animation for the main section */
 @keyframes gradient {
 0% {
     background-position: 0% 50%;
@@ -35,7 +51,6 @@ body {
 .css {
     text-align: center;
     width: 80%;
-    min-height: 100%;
     font-weight: 100;
     color: var(--text-color);
     margin: 0 auto;
@@ -47,4 +62,26 @@ body {
 /* Styling the first word of the site title */
 .css::first-line {
     color: var(--text-color2);
+}
+
+.divider {
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    height: fit-content;
+}
+
+.divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 10%;
+}
+
+.divider .shape-fill {
+    fill: #ffffff;
 }
