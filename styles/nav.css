@@ -5,72 +5,74 @@
   top: 0;
 }
 
-.nav__sidebar {
-    width: 20%;
-    z-index: 1; 
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: rgb(255, 255, 255); 
-    overflow-x: hidden; 
-    overflow-y: scroll;
-    transition: all 0.5s ease;
-  }
-  
-  /* The sidebar links */
-.nav__sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-.nav__sidebar a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Position and style the close button (top right corner) */
-
-  /* The button used to open the sidebar */
-.openbtn {
-    box-sizing: content-box;
-    font-size: 20px;
-    cursor: pointer;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding: 10px 15px;
-    border: none;
-    transition: all 0.5s ease;
-  }
-  
-.openbtn:hover {
-    background-color: #818181;
-  }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-.nav__button {
-    position: sticky;
-    top: 0;
-    transition: margin-left .5s; /* If you want a transition effect */
-    padding: 20px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
-
-.collapse {
-    width: 0;
-    pointer-events: none;
-    border-right: 1px solid #000000;
-  }
-
-.button-open {
-    margin-left: 15%;
+#menu__toggle {
+  opacity: 0;
 }
-
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  width: 100%;
+}
+.menu__btn {
+  position: fixed;
+  top: 1.2rem;
+  left: 1.2rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  /* left: -100%; */
+  width: 0;
+  height: 100%;
+  margin: 0;
+  padding: 5rem 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+  overflow-y: scroll;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;

@@ -31,68 +31,44 @@
    <!-- Navigation Bar -->
     <nav class="nav"">
         <!-- Nav trigger button -->
-        <div id="nav-button" class="nav__button">
-            <button class="openbtn" onclick="openNav()">&#9776;</button>
-        </div>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
         
-        <div id="sideBar" class="nav__sidebar collapse">
-            <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-            <a href="#">Box Model</a>
-            <a href="#">Selectors</a>
-            <a href="#">Cascade</a>
-            <a href="#">Specificity</a>
-            <a href="#">Inheritance</a>
-            <a href="#">Color</a>
-            <a href="#">Sizing Units</a>
-            <a href="#">Layouts</a>
-            <a href="#">Flexbox</a>
-            <a href="#">Grid</a>
-            <a href="#">Logical Properties</a>
-            <a href="#">Spacing</a>
-            <a href="#">Pseudo-elements</a>
-            <a href="#">Pseudo-classes</a>
-            <a href="#">Borders</a>
-            <a href="#">Shadows</a>
-            <a href="#">Focus</a>
-            <a href="#">Z-index</a>
-            <a href="#">Functions</a>
-            <a href="#">Gradients</a>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="#">Selectors</a></li>
+                <li><a class="menu__item" href="#">Box Model</a></li>
+                <li><a class="menu__item" href="#">Cascade</a></li>
+                <li><a class="menu__item" href="#">Inheritance</a></li>
+                <li><a class="menu__item" href="#">Specificity</a></li>
+                <li><a class="menu__item" href="#">Color</a></li>
+                <li><a class="menu__item" href="#">Sizing Units</a></li>
+                <li><a class="menu__item" href="#">Layouts</a></li>
+                <li><a class="menu__item" href="#">Flexbox</a></li>
+                <li><a class="menu__item" href="#">Grid</a></li>
+                <li><a class="menu__item" href="#">Logical Properties</a></li>
+                <li><a class="menu__item" href="#">Spacing</a></li>
+                <li><a class="menu__item" href="#">Pseudo-elements</a></li>
+                <li><a class="menu__item" href="#">Pseudo-classes</a></li>
+                <li><a class="menu__item" href="#">Borders</a></li>
+                <li><a class="menu__item" href="#">Shadows</a></li>
+                <li><a class="menu__item" href="#">Focus</a></li>
+                <li><a class="menu__item" href="#">Z-index</a></li>
+                <li><a class="menu__item" href="#">Functions</a></li>
+                <li><a class="menu__item" href="#">Gradients</a></li>   
+            </ul>
           </div>
-         
-        <script type="text/javascript">
-            {
-            let sideBar = document.querySelector('.openbtn');
-            let arrowCollapse = document.querySelector('.sidebar');
-            sideBar.onclick = () => {
-                sideBar.classList.toggle('navButton-open');
-                arrowCollapse.classList.toggle('collapse');
-            };
-            }
-        </script>
+            <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
     </nav>
 
 <!-- Main content -->
     <main>
-        <div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perspiciatis ipsum, rerum id, reprehenderit ducimus doloribus corrupti, aut laudantium temporibus eligendi accusamus repudiandae impedit adipisci cum consectetur at quibusdam ab!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perspiciatis ipsum, rerum id, reprehenderit ducimus doloribus corrupti, aut laudantium temporibus eligendi accusamus repudiandae impedit adipisci cum consectetur at quibusdam ab!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perspiciatis ipsum, rerum id, reprehenderit ducimus doloribus corrupti, aut laudantium temporibus eligendi accusamus repudiandae impedit adipisci cum consectetur at quibusdam ab!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perspiciatis ipsum, rerum id, reprehenderit ducimus doloribus corrupti, aut laudantium temporibus eligendi accusamus repudiandae impedit adipisci cum consectetur at quibusdam ab!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perspiciatis ipsum, rerum id, reprehenderit ducimus doloribus corrupti, aut laudantium temporibus eligendi accusamus repudiandae impedit adipisci cum consectetur at quibusdam ab!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perspiciatis ipsum, rerum id, reprehenderit ducimus doloribus corrupti, aut laudantium temporibus eligendi accusamus repudiandae impedit adipisci cum consectetur at quibusdam ab!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perspiciatis ipsum, rerum id, reprehenderit ducimus doloribus corrupti, aut laudantium temporibus eligendi accusamus repudiandae impedit adipisci cum consectetur at quibusdam ab!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perspiciatis ipsum, rerum id, reprehenderit ducimus doloribus corrupti, aut laudantium temporibus eligendi accusamus repudiandae impedit adipisci cum consectetur at quibusdam ab!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perspiciatis ipsum, rerum id, reprehenderit ducimus doloribus corrupti, aut laudantium temporibus eligendi accusamus repudiandae impedit adipisci cum consectetur at quibusdam ab!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perspiciatis ipsum, rerum id, reprehenderit ducimus doloribus corrupti, aut laudantium temporibus eligendi accusamus repudiandae impedit adipisci cum consectetur at quibusdam ab!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perspiciatis ipsum, rerum id, reprehenderit ducimus doloribus corrupti, aut laudantium temporibus eligendi accusamus repudiandae impedit adipisci cum consectetur at quibusdam ab!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perspiciatis ipsum, rerum id, reprehenderit ducimus doloribus corrupti, aut laudantium temporibus eligendi accusamus repudiandae impedit adipisci cum consectetur at quibusdam ab!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perspiciatis ipsum, rerum id, reprehenderit ducimus doloribus corrupti, aut laudantium temporibus eligendi accusamus repudiandae impedit adipisci cum consectetur at quibusdam ab!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perspiciatis ipsum, rerum id, reprehenderit ducimus doloribus corrupti, aut laudantium temporibus eligendi accusamus repudiandae impedit adipisci cum consectetur at quibusdam ab!
-            </p>
-          </div>
+       
     </main>
 
 
 </body>
 </html>
+
