@@ -1,40 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 :root {
     box-sizing: border-box;
-    --main-color  : conic-gradient(from -90deg at 25% 115%, #ff0000, #ff0066, #ff00cc, #cc00ff, #6600ff, #0000ff, #0000ff, #0000ff, #0000ff);
+    --main-bg-color  : conic-gradient(from -90deg at 25% 115%, #ff0000, #ff0066, #ff00cc, #cc00ff, #6600ff, #0000ff, #0000ff, #0000ff, #0000ff);
     --text-color  : hsl(0, 0%, 100%);
     --text-color2 : hsl(63, 100%, 59%);
     --shadow-color: hsla(12, 11%, 9%, 0.443);
+    --font-title  : 'Anton', sans-serif;
 }
-html, body {
-    height: 100%;
-}
-/* media query for small screens */
 
-/* First section */
-.landing {
-    background: var(--main-color);
+.header {
+    position: relative;
+    background: var(--main-bg-color);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     width: 100%;
-    height: 120%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 13rem;
-}
-@media screen and (max-width: 1300px) {
-    .landing {
-        /* padding-top: 3%; */
-    }
+    height: 50vh;
+    font-family: var(--font-title);
+    font-weight: 400;
+    line-height: 120%;
+    font-size: 4rem;
 }
 
-@media screen and (max-width: 700px) {
-    .landing {
-        /* padding-top: 10%; */
-        height: 70%;
-    }
-    .divider{
-        display: none;
-    }
-}
 /* Animation for the main section */
 @keyframes gradient {
 0% {
@@ -47,41 +34,49 @@ html, body {
     background-position: 0% 50%;
 }
 }
+
 /* Div containing the site title */
-.css {
+.header__title {
     text-align: center;
     width: 80%;
     font-weight: 100;
     color: var(--text-color);
     margin: 0 auto;
     transform: rotate(-10deg);
-    text-shadow: 5px 5px 1px var(--shadow-color);
-    
+    text-shadow: 5px 5px 1px var(--shadow-color);  
 }
 
 /* Styling the first word of the site title */
-.css::first-line {
+.header__title::first-line {
     color: var(--text-color2);
 }
 
-.divider {
+
+
+/* Divider for the header */
+.header__divider {
     position: absolute;
-    bottom: -20%;
+    bottom: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    transform: rotate(180deg);
-    height: fit-content;
 }
 
-.divider svg {
+.header__divider svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 10%;
+    height: 100px;
 }
 
-.divider .shape-fill {
-    fill: #ffffff;
+.header__divider .shape-fill {
+    fill: #FFFFFF;
+}
+
+@media only screen and (min-width: 900px) {
+    .header {
+        height: 120vh;
+        font-size: 14rem;
+    }
 }
