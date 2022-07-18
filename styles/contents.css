@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
+
+:root {
+    --heading-font: 'Roboto Condensed', sans-serif;
+    --heading-weight: 700;
+    --content-font: 'Roboto Condensed', sans-serif;
+    --content-weight: 300;
+    --heading-color: #9980fa;
+    --content-color: #212121;
+    --heading-size: 1.5rem;
+    --content-size: 1rem;
+}
+
+main {
+    margin-left: 2rem;
+}
+
+section h2 {
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    font-weight: var(--heading-weight);
+    font-size: var(--heading-size);
+}
+
+section a {
+    text-decoration: none;
+    color: var(--content-color);
+    font-family: var(--content-font);
+    font-weight: var(--content-weight);
+    font-size: var(--content-size);
+    vertical-align: middle;
+}
+
+@media only screen and (min-width: 900px) {
+    main {
+        margin-left: 5rem;
+        width: 50%;
+    }
+
+    section h2 {
+
+        font-size: 2rem;
+    }
+    
+    section a {
+        font-size: 1.5rem;
+    }
+}
+
+#blogs li {
+    list-style-type: "🌐 " 
+}
+
+#selectors li {
+    list-style-type: "👉 " 
+}
+
+#cascade li {
+    list-style-type: "⏬ " 
+}
+
+#inheritance li {
+    list-style-type: "🎁 " 
+}
+
+#specificity li {
+    list-style-type: "❗ " 
+}
+
+#color li {
+    list-style-type: "🌈 " 
+}
+
+#sizing li {
+    list-style-type: "📐 " 
+}
+
+#flexbox li {
+    list-style-type: "📦 " 
+}
+
+
+footer {
+ background:conic-gradient(from -90deg at 25% 115%, #ff0000, #ff0066, #ff00cc, #cc00ff, #6600ff, #0000ff, #0000ff, #0000ff, #0000ff);
+ animation: gradient 15s ease infinite;
+ background-size: 200% 200%;
+ margin: 0;
+ text-align: center;
+ font-family: 'Roboto Condensed', sans-serif;
+ font-weight: 700;
+}
+
+footer p {
+    margin: 0;
+    padding: 0.5rem 0;
+}
+footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #000;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    }

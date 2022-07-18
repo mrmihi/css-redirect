@@ -1,7 +1,6 @@
 
-.nav {
+nav {
   position: sticky;
-  height: 100vh;
   top: 0;
 }
 
@@ -25,7 +24,7 @@
 .menu__btn {
   position: fixed;
   top: 1.2rem;
-  left: 1.2rem;
+  left: 0.5rem;
   width: 1.6rem;
   height: 1.6rem;
   cursor: pointer;
@@ -66,13 +65,25 @@
 }
 .menu__item {
   display: block;
-  padding: 12px 24px;
+  padding: 0.73rem 2.3rem;
   color: #333;
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   transition-duration: .25s;
 }
 .menu__item:hover {
   background-color: #CFD8DC;
+  color: #9980fa;
+}
+
+@media only screen and (min-width: 900px) {
+  #menu__toggle:checked ~ .menu__box {
+    width: 50%;
+  }
+
+  .menu__item {
+    font-size: 1.5rem;
+  }
+}

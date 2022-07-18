@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS | Redirect</title>
-
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/landing.css">
     <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/contents.css">
 
 </head>
 <body>
@@ -36,37 +37,209 @@
             <label class="menu__btn" for="menu__toggle">
               <span></span>
             </label>
-        
+            <!-- Nav links -->
             <ul class="menu__box">
-                <li><a class="menu__item" href="#">Selectors</a></li>
-                <li><a class="menu__item" href="#">Box Model</a></li>
-                <li><a class="menu__item" href="#">Cascade</a></li>
-                <li><a class="menu__item" href="#">Inheritance</a></li>
-                <li><a class="menu__item" href="#">Specificity</a></li>
-                <li><a class="menu__item" href="#">Color</a></li>
-                <li><a class="menu__item" href="#">Sizing Units</a></li>
-                <li><a class="menu__item" href="#">Layouts</a></li>
-                <li><a class="menu__item" href="#">Flexbox</a></li>
-                <li><a class="menu__item" href="#">Grid</a></li>
-                <li><a class="menu__item" href="#">Logical Properties</a></li>
-                <li><a class="menu__item" href="#">Spacing</a></li>
-                <li><a class="menu__item" href="#">Pseudo-elements</a></li>
-                <li><a class="menu__item" href="#">Pseudo-classes</a></li>
-                <li><a class="menu__item" href="#">Borders</a></li>
-                <li><a class="menu__item" href="#">Shadows</a></li>
-                <li><a class="menu__item" href="#">Focus</a></li>
-                <li><a class="menu__item" href="#">Z-index</a></li>
-                <li><a class="menu__item" href="#">Functions</a></li>
-                <li><a class="menu__item" href="#">Gradients</a></li>   
+                <li onclick="navCollapse()"><a class="menu__item" href="#blogs">Blogs</a></li>
+                <li onclick="navCollapse()"><a class="menu__item" href="#selectors">Selectors</a></li>
+                <li onclick="navCollapse()"><a class="menu__item" href="#cascade">Cascade</a></li>
+                <li onclick="navCollapse()"><a class="menu__item" href="#inheritance">Inheritance</a></li>
+                <li onclick="navCollapse()"><a class="menu__item" href="#specificity">Specificity</a></li>
+                <li onclick="navCollapse()"><a class="menu__item" href="#color">Color</a></li>
+                <li onclick="navCollapse()"><a class="menu__item" href="#sizing">Sizing Units</a></li>
+                <li onclick="navCollapse()"><a class="menu__item" href="#flexbox">Flexbox</a></li>
+                <li onclick="navCollapse()"><a class="menu__item" href="#grid">Grid</a></li>
+                <li onclick="navCollapse()"><a class="menu__item" href="#logical-properties">Logical Properties</a></li>
+                <li onclick="navCollapse()"><a class="menu__item" href="#spacing">Spacing</a></li>
+                <li onclick="navCollapse()"><a class="menu__item" href="#pseudo-elements">Pseudo-elements</a></li>
+                <li onclick="navCollapse()"><a class="menu__item" href="#pseudo-classes">Pseudo-classes</a></li>
+                <li onclick="navCollapse()"><a class="menu__item" href="#borders">Borders</a></li>
+                <li onclick="navCollapse()"><a class="menu__item" href="#shadows">Shadows</a></li>
+                <li onclick="navCollapse()"><a class="menu__item" href="#focus">Focus</a></li>
+                <li onclick="navCollapse()"><a class="menu__item" href="#z-index">Z-index</a></li>
+                <li onclick="navCollapse()"><a class="menu__item" href="#functions">Functions</a></li>
+                <li onclick="navCollapse()"><a class="menu__item" href="#gradients">Gradients</a></li>   
             </ul>
-          </div>
-            <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+        </div>
+        <!--Handle navigation collapse on choosing-->
+        <script>
+            function navCollapse() {
+                var x = document.getElementById("menu__toggle");
+                if (x.checked == true) {
+                    document.getElementById("menu__toggle").checked = false;
+                } else {
+                    document.getElementById("menu__toggle").checked = true;
+                }
+            }
+        </script>
     </nav>
 
 <!-- Main content -->
     <main>
-       
+
+        <section id="blogs">
+            <h2>Blogs</h2>
+            <ul>
+                <li>
+                    <a href="https://css-tricks.com/">
+                        CSS-Tricks
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="selectors">
+            <h2>Selectors</h2>
+            <ul>
+                <li>
+                    <a href="https://kittygiraudel.github.io/selectors-explained/">
+                        Selectors explained
+                    </a>
+                </li>
+                <li>
+                    <a href="https://flukeout.github.io/">
+                        Interactive selectors game
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="cascade">
+            <h2>The Cascade</h2>
+            <ul>
+                <li>
+                    <a href="https://wattenberger.com/blog/css-cascade">
+                        Interactive explainer of the cascade
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="inheritance">
+            <h2>Inheritance</h2>
+            <ul>
+                <li>
+                    <a href="https://www.smashingmagazine.com/2016/11/css-inheritance-cascade-global-scope-new-old-worst-best-friends/">
+                        Inheritance for modular design
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="specificity">
+            <h2>Specificity</h2>
+            <ul>
+                <li>
+                    <a href="http://specifishity.com/">
+                        A Visual Guide to specificity 
+                    </a>
+                </li>
+                <li>
+                    <a href="https://specificity.keegan.st/">
+                        Specificity calculator 
+                    </a>
+                </li>
+                <li>
+                    <a href="https://css-tricks.com/specifics-on-css-specificity/">
+                        Specifics on CSS Specificity 
+                    </a>
+                </li>
+                <li>
+                    <a href="https://polypane.app/css-specificity-calculator/">
+                        Specificity calculator II
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="color">
+            <h2>Colors</h2>
+            <ul>
+                <li>
+                    <a href="https://codepen.io/argyleink/pen/ExjReJa">
+                        Angles with HSL
+                    </a>
+                </li>
+                <li>
+                    <a href="https://css-tricks.com/nerds-guide-color-web/">
+                        A Nerd’s Guide to Color on the Web
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=eqZqx6lRPe0">
+                        Read color hex codes🎬   
+                    </a>
+                </li>
+                <li>
+                    <a href="https://medium.com/basecs/hexs-and-other-magical-numbers-9785bc26b7ee">
+                        How hexadecimal codes work
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="sizing">
+            <h2>Sizing Units</h2>
+            <ul>
+                <li>
+                    <a href="https://learn.scannerlicker.net/2014/07/31/so-how-much-is-an-em/">
+                        All About Ems
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wattenberger.com/blog/css-percents">
+                        What does 100% mean in CSS?
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="flexbox">
+            <h2>Flexbox</h2>
+            <ul>
+                <li>
+                    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">
+                        A Complete Guide to Flexbox
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.smashingmagazine.com/2018/10/flexbox-use-cases/">
+                        Use Cases For Flexbox
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.smashingmagazine.com/2018/08/flexbox-display-flex-container/">
+                        What Happens When You Create A Flexbox Flex Container?
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.smashingmagazine.com/2018/08/flexbox-alignment/">
+                        Everything You Need To Know About Alignment In Flexbox
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.smashingmagazine.com/2018/09/flexbox-sizing-flexible-box/">
+                        How Big Is That Flexible Box?
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <hr>
+
+        Under Construction
     </main>
+
+    <footer>
+        <p>
+            <a href="https://github.com/mrmihi">@mrmihi</a>
+        </p>
+    </footer>
 
 
 </body>
