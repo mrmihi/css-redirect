@@ -79,7 +79,32 @@ section a {
     list-style-type: "📦 " 
 }
 
+#grid li {
+    list-style-type: "🧇 " 
+}
 
+#gradients li {
+    list-style-type: "🎨 " 
+}
+
+#lists li {
+    list-style-type: "📚 " 
+}
+
+#overflow li {
+    list-style-type: "🌊 " 
+}
+
+#svg li {
+    list-style-type: "🖼 " 
+}
+
+#misc li {
+    list-style-type: "🦠 " 
+}
+.source {
+    text-align: center;
+}
 footer {
  background:conic-gradient(from -90deg at 25% 115%, #ff0000, #ff0066, #ff00cc, #cc00ff, #6600ff, #0000ff, #0000ff, #0000ff, #0000ff);
  animation: gradient 15s ease infinite;

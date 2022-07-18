@@ -48,6 +48,15 @@ nav {
   content: '';
   top: 8px;
 }
+
+.menu__btn:focus {
+  outline: none;
+}
+
+.menu__btn:active{
+  outline: none;
+}
+
 .menu__box {
   display: block;
   position: fixed;
