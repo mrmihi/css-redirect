@@ -104,6 +104,7 @@ section a {
 }
 .source {
     text-align: center;
+    margin: auto;
 }
 footer {
  background:conic-gradient(from -90deg at 25% 115%, #ff0000, #ff0066, #ff00cc, #cc00ff, #6600ff, #0000ff, #0000ff, #0000ff, #0000ff);
